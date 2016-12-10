@@ -4,9 +4,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/peter/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -83,8 +84,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias fr="cd ~/code/fringe_app"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(rbenv init -)"
+
+alias macvim="open /usr/local/Cellar/macvim/8.0-110/macvim.app"
+
+eval "$(rbenv init -)"
+
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH="/usr/local/sbin:$PATH"
