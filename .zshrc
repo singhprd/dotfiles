@@ -101,3 +101,5 @@ export GOPATH=$HOME/code/go
 export PATH=$PATH:$GOPATH/bin
 export GOBIN=$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
+
+alias ls="ls -la -G"
